@@ -70,7 +70,8 @@ Change that with the calculated CRC ```A4 3A C2 1C``` and try to unzip it again
 
 ![image](https://github.com/ZalfaNafila/ARA5Forens/assets/92864261/389b7484-5ff7-4689-a38b-c878f2df2c74)
 
-From the **song.bz2** we can unzip that with Bunzip2 to get the wav file named **“song”**
+From the **song.bz2** we can unzip that with Bunzip2 to get the wav file named **“song”**  
+
 When we put that audio into a spectrogram analyzer e.g. Sonic Visualiser, we will get the flag 
 ```ARA5{zipp1_zipp1_z4pp4_z4pp4}```
 
