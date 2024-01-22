@@ -45,7 +45,7 @@ with open("resultQR.txt", "w") as outputFile:
     df.head()
 ```
 
-From the output file, we can see a lot of string. When you try to ```grep flag``` it will give you lot of list
+From the output file, we can see a lot of string. When you try to ```grep flag``` it will give you lot of results
 
 ![image](https://github.com/ZalfaNafila/ARA5Forens/assets/92864261/1f4315e4-2ef0-4c5a-aa02-9ef21b0b7a78)
 
