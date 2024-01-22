@@ -28,7 +28,7 @@ with open("wordlist.txt", "w") as outputFile:
                     for letter in range(ord('A'), ord('Z')+1):
                         for m in range(6): #character
                             outputFile.write(
-                                f"{mo[i]}{charac[j]}{rand[k]}{num[l]}{chr(let							ter)}{rand[m]}\n")
+                                f"{mo[i]}{charac[j]}{rand[k]}{num[l]}{chr(letter)}{rand[m]}\n")
                             
 ```
 After we save the output, use John the Ripper to brute force all the possible passwords
