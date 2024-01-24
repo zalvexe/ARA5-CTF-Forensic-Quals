@@ -1,0 +1,16 @@
+# The QRazy Chest
+Author: zalv
+
+Category: Forensic
+
+**Flag: ARA5{t3chn0bl4d3_nev4h_d13s}**
+
+## Description
+Technoblade's immortal spell is now lost in pieces. Help him find it!
+
+## Difficulty
+Easy
+
+## Solution
+From that image, we can use binwalk to check and extract the hidden file 
+
