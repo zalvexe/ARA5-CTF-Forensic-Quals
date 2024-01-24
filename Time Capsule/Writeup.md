@@ -16,20 +16,19 @@ Based on notes.png we can make a wordlist to brute force the password of TimeCap
 
 ```python
 with open("wordlist.txt", "w") as outputFile:
-    mo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    charac = ["kAor1", "s3nKu", "sTev3", "Lev1", "L1Ly"]
-    rand = ['*', '#', '!', '%', '&', '+']
-    num = [0,1,2,3,4,5,6,7,8,9]
+	month = [1,2,3,4,5,6,7,8,9,10,11,12]
+	character = ["kAor1","s3nKu","sTev3","Lev1","L1Ly"]
+	char = ['*','#','!','%','&','+']
+	num = [0,1,2,3,4,5,6,7,8,9]
 
-    for i in range(12): #month
-        for j in range(5): #character name
-            for k in range(6): #character
-                for l in range(10): #num
-                    for letter in range(ord('A'), ord('Z')+1):
-                        for m in range(6): #character
-                            outputFile.write(
-                                f"{mo[i]}{charac[j]}{rand[k]}{num[l]}{chr(letter)}{rand[m]}\n")
-                            
+	for i in month:
+		for j in character:
+			for k in char:
+				for l in num:
+					for letter in range(ord('A'), ord('Z')+1):
+						for m in char:
+							outputFile.write(f"{i}{j}{k}{l}{chr(letter)}{m}\n")
+							                           
 ```
 After we save the output, use John the Ripper to brute force all the possible passwords
 
