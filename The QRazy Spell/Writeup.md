@@ -37,7 +37,6 @@ folder = glob.glob('_Chest.jpg.extracted/*.png')
 
 with open("resultQR.txt", "w") as outputFile:
     for file in sorted(folder):
-        #outputFile.write(file)
         img = cv2.imread(file)
         detect =cv2.QRCodeDetector()
         data, pts, st_code = detect.detectAndDecode(img)
