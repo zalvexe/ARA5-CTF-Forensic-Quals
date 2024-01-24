@@ -42,11 +42,11 @@ After unzipping the **“TimeCapsule.zip”** you’ll find another zip named **
 ![image](https://github.com/ZalfaNafila/ARA5Forens/assets/92864261/6722ec04-2480-49c0-a5d2-e74da611e7b4)
 
 By that, we know that it doesn’t have the End of central directory signature, which means we need to add that signature. 
-Based on this website https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html, We can count at which byte the End-of-central-directory signature started
+Based on this website https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html, We can determine at which byte the End-of-central-directory signature started
 
 ![image](https://github.com/ZalfaNafila/ARA5Forens/assets/92864261/c7bfc6a7-ecb0-4ae4-9646-02da9e4b9e60)
 
-As you can see, we need to count the byte from the end, starting with the byte of Comment until byte of Disk Number. (But our zip file doesn't have a comment, so we can start at Comment len byte)
+As you can see, we need to count the byte position from the end, starting with the byte of Comment until byte of Disk Number. (But our zip file doesn't have a comment, so we can start at Comment len byte)
 
 ![image](https://github.com/ZalfaNafila/ARA5Forens/assets/92864261/44c70822-6ef1-493a-8d78-c3462df4aea0)
 
