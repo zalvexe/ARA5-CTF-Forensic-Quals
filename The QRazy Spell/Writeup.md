@@ -18,7 +18,7 @@ From the challenge's image, we can use binwalk to check and extract the hidden f
 
 From there, we know there’s a GIF file of QR codes. 
 
-![image](https://github.com/zalvexe/ARA5Forens/assets/92864261/de380d3b-6c6f-4ad3-8cff-a770b3517b63)
+![](The-Crazy_Spell/gif-qr.gif)
 
 If we try to scan one of them, it will give you a random string. Based on Challenge description, *"the spell is lost in pieces"* So we need to scan all of that QR to know the full string.
 To extract all GIF frames, we can use **Graphicsmagick**
