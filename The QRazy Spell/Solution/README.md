@@ -21,7 +21,7 @@ From there, we know there’s a GIF file of QR codes.
 ![gif](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/gif%20qr.gif)
 
 If we try to scan one of them, it will give you a random string. Based on Challenge description, *"the spell is lost in pieces"* So we need to scan all of that QR to know the full string.
-To extract all GIF frames, we can use **Graphicsmagick**
+To extract all GIF frames, we can use ```Graphicsmagick```
 
 ```gm convert 26C2 -coalesce +adjoin GIF_Frame%3d.png```
 
@@ -55,4 +55,4 @@ If we apply a ```Red Plane``` filter from Stegsolve, we’ll see the hidden text
 
 ![image](https://github.com/zalvexe/ARA5Forens/assets/92864261/17ded4d1-1eac-4e30-942f-c4f4f9522cf7)
 
-**ARA5{t3chn0bl4d3_nev4h_d13s}**
+```ARA5{t3chn0bl4d3_nev4h_d13s}```
