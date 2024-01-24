@@ -32,13 +32,13 @@ with open("wordlist.txt", "w") as outputFile:
 ```
 After we save the output, use John the Ripper to brute force all the possible passwords
 
-
+![image](https://github.com/zalvexe/ARA5Forens/blob/main/Timed%20Capsule/Solution/pass.png)
 
 Then we can unlock the zip with that password : ```5s3nKu%3T+```
 
 After unzipping the ```TimeCapsule.zip``` you’ll find another zip named ```MyCapsule.zip```. when you try to unzip it, it will give an error
 
-
+![image](https://github.com/zalvexe/ARA5Forens/blob/main/Timed%20Capsule/Solution/CentralDirError.png)
 
 By that, we know that it doesn’t have the End of central directory signature, which means we need to add that signature. 
 Based on this [website](https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html), We can determine at which byte the End-of-central-directory signature started
