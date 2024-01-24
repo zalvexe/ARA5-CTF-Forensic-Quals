@@ -9,7 +9,7 @@ Category: Forensic
 I discovered my old time capsule, and it has my favorite song in it. The problem is, I forgot the password, and due to its age, the file inside might be corrupted. I also found the note that I wrote a long time ago about the password. My cat said that you might be able to help me. Can you?
 
 ## Difficulty
-Easy?
+Easy
 
 ## Solution
 Based on ```notes.png``` we can make a wordlist to brute force the password of ```TimeCapsule.zip```
@@ -63,7 +63,7 @@ We need to change ```41 52 41 2E``` with the correct signature ```50 4B 03 04```
 
 Now we got the wrong CRC, but the file inside can still be extracted. To fix this, we can find the wrong CRC, which based on that information is ```CB F4 39 26```
 
-![image](https://github.com/zalvexe/ARA5Forens/blob/main/Timed%20Capsule/Solution/CRCBytepng)
+![image](https://github.com/zalvexe/ARA5Forens/blob/main/Timed%20Capsule/Solution/CRCByte.png)
 
 Change that with the calculated CRC ```A4 3A C2 1C``` and try to unzip it again
 
