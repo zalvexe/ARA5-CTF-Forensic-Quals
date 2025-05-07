@@ -43,8 +43,7 @@ with open("resultQR.txt", "w") as outputFile:
         outputFile.write(data)
 
 ```
-From the output file, we can find a link to Mega
-[https://mega.nz/file/TUVxRQpZ#AMmOgOmA86aVmk0wHrWKmMIlgvWKsfvuAleE7BilZBU]
+From the output file, we can find a link to [Mega](https://mega.nz/file/TUVxRQpZ#AMmOgOmA86aVmk0wHrWKmMIlgvWKsfvuAleE7BilZBU)
 
 <img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/catResult.png" width="625">
 
