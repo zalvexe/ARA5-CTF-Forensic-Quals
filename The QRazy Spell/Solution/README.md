@@ -14,11 +14,11 @@ Easy
 ## Solution 
 From the challenge's image, we can use binwalk to check and extract the hidden file 
 
-![image](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/binwalk.png)
+<img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/binwalk.png" width="625">
 
 From there, we know there’s a GIF file of QR codes. 
 
-![gif](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/Pieces.gif)
+<img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/Pieces.gif" width="225">
 
 If we try to scan one of them, it will give you a random string. Based on Challenge description, *"the spell is lost in pieces"* So we need to scan all of that QR to know the full string.  
 To extract all GIF frames, we can use ```Graphicsmagick```
@@ -46,14 +46,14 @@ with open("resultQR.txt", "w") as outputFile:
 From the output file, we can find a link to Mega
 [https://mega.nz/file/TUVxRQpZ#AMmOgOmA86aVmk0wHrWKmMIlgvWKsfvuAleE7BilZBU]
 
-![image](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/catResult.png)
+<img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/catResult.png" width="625">
 
 After downloading that file, we’ll see a mostly black image
 
-![image](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/Picture1.png)
+<img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/Picture1.png" width="625">
 
 If we apply a ```Red Plane``` filter from Stegsolve, we’ll see the hidden text which is the flag
 
-![image](https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/flag.png)
+<img src="https://github.com/zalvexe/ARA5Forens/blob/main/The%20QRazy%20Spell/Solution/flag.png" width="625">
 
 ```ARA5{t3chn0bl4d3_nev4h_d13s}```
